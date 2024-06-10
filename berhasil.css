@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: #222831;
+}
+.container {
+  text-align: center;
+
+  background-color: #76abae;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #222831;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+h4 {
+    color: white;
+    margin-bottom: 10px;
+  } 
+.success-image {
+  width: 99990px; 
+  height: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: #222831;
+}
+.container {
+  text-align: center;
+
+  background-color: #76abae;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #222831;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+h4 {
+    color: white;
+    margin-bottom: 10px;
+  } 
+.success-image {
+  width: 99990px; /* Atur lebar gambar */
+  height: auto; /* Biarkan tinggi otomatis menyesuaikan lebar */
+}
+

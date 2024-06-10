@@ -1,0 +1,220 @@
+html {
+    font-family: "Proxima Nova", Arial, Helvetica, sans-serif, Arial;
+    background-color: #222831;
+}
+header {
+    background-color: #76ABAE;
+    padding: 20px 0;
+    border-bottom: 2px solid #ffffff; /* Tambahkan garis bawah pada header */
+  }
+  /* Tambahkan di bawah CSS yang sudah ada */
+  
+  .hyper-tix {
+    font-size: 50px; /* Atur ukuran huruf sesuai kebutuhan */
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.Nomor1 td {
+    padding: 10px;
+    text-align: left;
+}
+
+.Nomor1 img {
+    max-width: 60%;
+   
+}
+
+.Deskripsi_Konser {
+  text-shadow: 0 2px 4px white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.detail {
+  color: #fff;
+  text-align: center;
+}
+
+.detail p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.detail p[span="Judul"] {
+  font-weight: bolder;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 2px 4px black;
+}
+
+.detail p[span="Tanggal"] {
+  font-style: large;
+  font-weight: bolder;
+  color: grey;
+}
+
+.detail p[span="Tempat"] {
+  font-style: large;
+  font-weight: bolder;
+  color: grey
+}
+.detail p[span="Harga"] {
+  font-style: large;
+  font-weight: bolder;
+  color: grey
+}
+
+.Deskripsi_section p > strong{
+  display: flex; /* Menggunakan flexbox */
+  align-items: center; /* Mengatur vertikal align agar sejajar */
+  color: #0049cc;
+}
+.Seat_Konser p strong {
+  font-weight: bold;
+  color: #007bff; /* blue color */
+}
+
+/* Atur gaya untuk .Jenis_tiket */
+.Jenis_tiket {
+  background-color: #7e2e2e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Atur gaya untuk h3 */
+.Jenis_tiket h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: gray;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Atur gaya untuk p */
+.Jenis_tiket p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: white;
+  text-shadow: grey;
+}
+
+/* Atur gaya untuk p dengan class "price" */
+.Jenis_tiket p.price {
+  position: relative;
+  padding: 16px 0 0;
+  color: black;
+  font-size: bold;
+}
+
+/* Atur gaya untuk button */
+.stockada {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.stockhabis {
+  background-color: #dc3545; /* warna merah */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;  
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+li a button {
+  /* Gaya untuk link secara umum */
+  background-color: #0049cc !important;
+  border-radius: 8px;
+  font-size: .875rem;
+  padding: 6px 30px;
+  text-transform: capitalize !important;
+  font-weight: 400;
+  color: white;
+}
+
+/* Gaya untuk link ketika sedang hover */
+li a:hover {
+  background-color: #eee; /* Ganti warna background ketika hover */
+  color: #111386; /* Ganti warna teks ketika hover (optional) */
+}
+
+
+
+  .Ketentuan {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.Ketentuan1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+
+
+footer {
+    background-color: #76ABAE;
+    color: #EEEEEE;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+  }
+  
+  .footer-info,
+  .footer-nav {
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav ul {
+    padding: 0;
+  }
+  
+  .footer-nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footer-nav a {
+    color: #EEEEEE;
+    text-decoration: none;
+}

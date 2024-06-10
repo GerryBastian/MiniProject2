@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #222831;
+}
+
+header {
+    background-color: #76abae;
+    padding: 15px 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+@font-face {
+    font-family: 'Azonix';
+    src: url('Font/Azonix.ttf') format('truetype');
+}
+
+.hyper-tix {
+    font-family: 'Azonix', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 280px;
+    display: inline-block;
+    overflow: hidden;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.hyper-tix::before,
+.hyper-tix::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hyper-tix::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff0000;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.hyper-tix::after {
+    left: -2px;
+    text-shadow: -2px 0 #00C7FF;
+    clip: rect(24px, 450px, 36px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0%, 100% {
+        clip: rect(44px, 9999px, 56px, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        clip: rect(25px, 9999px, 62px, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0%, 100% {
+        clip: rect(24px, 9999px, 36px, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        clip: rect(14px, 9999px, 74px, 0);
+    }
+}
+
+.hyper-tix:hover {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #76ABAE;
+    padding: 13.3px 0;
+    border-bottom: 2px solid #ffffff;
+    width: 80vw;
+    margin-left: calc(-40vw + 50%);
+    margin-bottom: calc(-10vw + 16.3%);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #000000;
+    transition: 0.2s;
+}
+
+.nav-links a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::before {
+    width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+}
+
+.seating-plan-container {
+    position: relative;
+    width: 40%;
+    margin-bottom: 20px;
+    top: 24px;
+}
+
+.seating-plan-container:hover .seating-plan {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.seating-plan {
+    width: 100%;
+    max-width: 100%;
+}
+
+.ticket-info {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ticket-details {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #76abae;
+}
+
+.judul {
+    color: #76abae;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #76abae;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+button {
+    background-color: #76abae;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.back {
+    float: right;
+}
+
+footer {
+    background-color: #76abae;
+    color: #eeeeee;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+}
+
+.footer-info,
+.footer-nav {
+    margin-bottom: 20px;
+}
+
+.footer-nav ul {
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-nav a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #76ABAE;
+    padding: 20px 0;
+    border-bottom: 2px solid #ffffff;
+}
+
